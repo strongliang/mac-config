@@ -1,0 +1,75 @@
+var=`grep -i $* <<EOF 
+
+maybuild: 10.5.52.150
+quoc linux: 10.5.50.103
+solaris 10.5.51.129
+may1 app-admin@10.5.3.27
+mayclean app-admin@10.5.2.251
+may2 app-admin@192.168.1.119
+windows maytag client zhuang@10.5.2.148
+sqlserver administrator@10.5.100.15
+aws 54.201.79.81
+william root@centos6-64-335-wt
+
+
+# Bots
+# turing.dhcp.zmanda.com
+buildbot-ub1304-64 10.5.52.61
+buildbot-ub1304-32 10.5.52.70
+buildbot-ub1210-64 10.5.50.234
+buildbot-ub1210-32 10.5.50.238
+buildbot-suse10 10.5.51.1
+buildbot-sol10-intel-2 10.5.50.119
+buildbot-rhel5 10.5.52.158
+buildbot-rhel4 10.5.52.116 
+buildbot-fc17-64 10.5.50.205
+buildbot-fc17-32 10.5.52.206
+buildbot-fc15-64 10.5.50.2
+buildbot-fc18-64 10.5.52.176
+buildbot-fc18-32 10.5.52.125
+
+# boole.zmanda.com
+
+buildbot-ub1110-64 10.5.50.16
+buildbot-ub1110-32 10.5.50.17
+buildbot-ub1104-64 10.5.51.193
+buildbot-ub1104-32 10.5.51.194
+buildbot-ub1010-64 10.5.51.93
+buildbot-ub1010-32 10.5.51.92
+buildbot-ub1004-64 10.5.52.62
+buildbot-ub1004-32 10.5.51.185
+buildbot-sol10-intel_migrated 10.5.50.117 
+buildbot-rhel6-64 10.5.51.72
+buildbot-rhel6-32 10.5.51.71
+buildbot-fc19-64 10.5.51.94
+buildbot-fc19-32 10.5.51.106
+buildbot-deb7-rc1-64 10.5.52.147
+buildbot-deb7-rc1-32 10.5.52.146
+buildbot-deb6-64 10.5.51.178
+buildbot-deb6-32 10.5.51.160
+
+# babbage.zmanda.com
+buildbot-ub1204-64-lts 10.5.50.127 
+buildbot-ub1204-64 10.5.50.127
+buildbot-ub1204-32-lts 10.5.50.126
+buildbot-ub1204-32 10.5.50.126
+
+# Thoth.zmanda.com
+buildbot-sol10-sparc 192.168.10.35
+buildbot-sles11-64 10.5.52.104
+buildbot-sles11-32 10.5.52.103
+buildbot-sles10-64 10.5.52.111
+buildbot-sles10-32 10.5.50.225
+buildbot-rhel5-64 10.5.50.228
+buildbot-fc16-64 10.5.50.34
+buildbot-fc16-32 10.5.50.59
+
+buildbot-fc15-32 10.5.50.21
+buildbot-deb5-64 10.5.50.226
+buildbot-deb5-32 10.5.51.80
+
+
+
+EOF
+`
+echo "${var##* }"

@@ -1,0 +1,12 @@
+DROP=~/Dropbox/config/StickiesDatabase
+LOCAL=~/Library/StickiesDatabase
+
+
+if [[ "$LOCAL" -nt "$DROP" ]]; then
+    mv "$DROP" "$DROP".bkp
+    cp -p "$LOCAL" "$DROP"
+elif [[ "$LOCAL" -ot "$DROP" ]]; then
+    mv "$LOCAL" "$LOCAL".bkp
+    cp -p "$DROP" "$LOCAL"
+fi
+
